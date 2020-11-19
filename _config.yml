@@ -23,3 +23,5 @@ asciidoctor: {}
 
 # Minima (Theme) settings
 github_username: bbenno
+header_pages:
+- ref.adoc
