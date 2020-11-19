@@ -1,0 +1,8 @@
+= References
+:icons: font
+:toc: macro
+
+This is a growing base of references.
+
+toc::[]
+

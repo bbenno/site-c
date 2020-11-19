@@ -1,0 +1,9 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// AsciiDoctor does not support anything higher than 4.7
+// issue: https://github.com/asciidoctor/asciidoctor/issues/2535
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
