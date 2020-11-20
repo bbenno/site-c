@@ -1,0 +1,10 @@
+= Rust
+
+.Lessons learned
+* Use new scope for statements prepared at a transaction
+* Do not implement the CLI yourself! Use e.g. clap instead...
+* Closures and functions are not (easy) interchangable
+* Use `.expect(msg)` to support yourself
+* Logging > `println!`
+* `cargo` allows workbenches
+* upcasting is a mess
