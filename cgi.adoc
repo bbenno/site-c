@@ -10,6 +10,10 @@
 
 * provides all HTML{3,4,5} Tagsfootnote:[https://github.com/ruby/cgi/blob/master/lib/cgi/html.rb#L968[]]
 
+.examples
+* https://www.tutorialspoint.com/ruby/ruby_web_applications.htm[Ruby Web Applications - CGI Programming] @Tutorials Point
+* https://www.tutorialspoint.com/ruby/ruby_cgi_methods.htm[Ruby - CGI Useful Methods] @Tutorials Point
+
 .Troubleshoot
 * Make sure the file has extension `.cgi`
 * Make sure the file has `LF` file endings if you like to run in un UNIX servers
