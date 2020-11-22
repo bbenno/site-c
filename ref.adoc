@@ -6,3 +6,37 @@ This is a growing base of references.
 
 toc::[]
 
+== js
+
+* http://htmlcheatsheet.com/js/[]
+* http://www.fh-wedel.de/~si/seminare/ws07/Ausarbeitung/11.javascript/docs/protochain.html[]
+* https://developer.mozilla.org/de/docs/Web/JavaScript/Inheritance_and_the_prototype_chain[]
+* https://developer.mozilla.org/de/docs/Web/JavaScript/Inheritance_and_the_prototype_chain[]
+
+== LICENSE
+
+* https://choosealicense.com[]
+
+== md
+
+.spec
+* https://daringfireball.net/projects/markdown/basics[Markdown]
+  -- the original
+* https://spec.commonmark.org/current/[CommonMark]
+  icon:github[fw, link="https://github.com/commonmark/commonmark-spec"]
+  -- the "`standard, unambiguous syntax specification for Markdown`"
+
+.style
+* https://github.com/cirosantilli/markdown-style-guide[cirosantilli/markdown-style-guideicon:github[fw]]
+* https://github.com/google/styleguide/blob/gh-pages/docguide/style.md[google/styleguide/docguide/style.mdicon:github[fw]]
+* https://github.com/slang800/markdown-styleguide[slang800/markdown-styleguideicon:github[fw]]
+
+== php
+
+* https://www.mullie.eu/parallel-processing-multi-tasking-php/[Concurrency]
+
+== yml
+
+* https://yaml-multiline.info/[]
+* https://gist.github.com/jonschlinkert/5170877[]
+* https://kapeli.com/cheat_sheets/YAML.docset/Contents/Resources/Documents/index[]
