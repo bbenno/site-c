@@ -1,0 +1,16 @@
+= CGI
+:icons: font
+
+== Ruby: `ruby/cgi`
+
+* https://github.com/ruby/cgi[Source on icon:github[]]
+* https://ruby-doc.org/stdlib-2.5.1/libdoc/cgi/rdoc/CGI.html[Documentation on ruby-doc.org]
+
+// -
+
+* provides all HTML{3,4,5} Tagsfootnote:[https://github.com/ruby/cgi/blob/master/lib/cgi/html.rb#L968[]]
+
+.Troubleshoot
+* Make sure the file has extension `.cgi`
+* Make sure the file has `LF` file endings if you like to run in un UNIX servers
+* Make sure the file has permissions `755`
