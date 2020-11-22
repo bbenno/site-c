@@ -18,3 +18,4 @@
 * Make sure the file has extension `.cgi`
 * Make sure the file has `LF` file endings if you like to run in un UNIX servers
 * Make sure the file has permissions `755`
+* Chapter https://www.oreilly.com/openbook/cgi/ch12_01.html[Debuggin and Testing CGI Applications/Common Errors] in Shishir Gundavaram's Book _CGI Programming on the World Wide Web_
