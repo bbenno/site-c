@@ -1,7 +1,13 @@
 = UI / Design
 
+== Color
+
 * http://amortizedcost.net/ui-desing-for-software-developer-part-1/[]
+
+.generator
+* https://coolors.co[]
+* https://color.adobe.com[]
 
 == UX
 
-* https://lawsofux.com/[]
+* https://lawsofux.com[]
