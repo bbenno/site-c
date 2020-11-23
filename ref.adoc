@@ -35,6 +35,11 @@ toc::[]
 
 * https://www.mullie.eu/parallel-processing-multi-tasking-php/[Concurrency]
 
+== py
+
+.learn
+* https://realpython.com/[Real Python]
+
 == yml
 
 * https://yaml-multiline.info/[]
