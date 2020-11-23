@@ -1,0 +1,5 @@
+= Web
+
+== Frameworks
+
+* https://gohugo.io[Hugo] icon:github[link=https://github.com/gohugoio/hugo] -- static HTML and CSS website generator written in Go
