@@ -1,5 +1,11 @@
 = Web
 
+== Favicon
+
+.generator
+* https://favicon.io/[]
+* https://www.favicon-generator.org/[]
+
 == Frameworks
 
 * https://gohugo.io[Hugo] icon:github[link=https://github.com/gohugoio/hugo] -- static HTML and CSS website generator written in Go
