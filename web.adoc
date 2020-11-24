@@ -1,5 +1,13 @@
 = Web
 
+.consideration
+* https://developer.mozilla.org/docs/Web/Accessibility[Accessibility]
+* https://validator.w3.org/nu/[HTML Validity]
+* Favicon
+* Mobile View
+* Imprint
+* Self-description
+
 == Favicon
 
 .generator
