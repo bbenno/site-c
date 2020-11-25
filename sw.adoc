@@ -1,0 +1,7 @@
+== Software / Tooling
+:icons: font
+
+.Disassembler
+* Intermediate Language Disassembler (ILDASM)
+* ILSpy icon:github[link=https://github.com/icsharpcode/ILSpy]
+* dnSpy icon:github[link=https://github.com/0xd4d/dnSpy]
