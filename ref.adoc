@@ -31,6 +31,10 @@ toc::[]
 * https://github.com/google/styleguide/blob/gh-pages/docguide/style.md[google/styleguide/docguide/style.mdicon:github[fw]]
 * https://github.com/slang800/markdown-styleguide[slang800/markdown-styleguideicon:github[fw]]
 
+== regex
+
+* https://jex.im/regulex/[Visualizer]
+
 == php
 
 * https://www.mullie.eu/parallel-processing-multi-tasking-php/[Concurrency]
