@@ -6,6 +6,10 @@ This is a growing base of references.
 
 toc::[]
 
+== elm
+
+* https://elmprogramming.com/[Beginnning Elm | Gentle introduction to Elm]
+
 == js
 
 * http://htmlcheatsheet.com/js/[]
@@ -43,6 +47,10 @@ toc::[]
 
 .learn
 * https://realpython.com/[Real Python]
+
+== web
+
+* https://marksheet.io[MarkSheet - HTML & CSS Tutorial]
 
 == yml
 
