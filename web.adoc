@@ -9,8 +9,13 @@
 * Imprint
 * Self-description
 
-== Favicon
+== Images
 
+=== SVG
+
+* https://github.com/svg/svgo/[SVG Optimizer] -- `npm install svgo`
+
+=== Favicon
 .generator
 * https://favicon.io/[]
 * https://www.favicon-generator.org/[]
