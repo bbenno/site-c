@@ -1,4 +1,5 @@
 = Web
+:icons: font
 
 .consideration
 * https://developer.mozilla.org/docs/Web/Accessibility[Accessibility]
@@ -13,6 +14,12 @@
 .generator
 * https://favicon.io/[]
 * https://www.favicon-generator.org/[]
+
+== Toolkits
+
+* https://getbootstrap.com[Bootstrap]
+** https://icons.getbootstrap.com[Bootstrap Icons] icon:github[link=https://github.com/twbs/icons]
+* https://fontawesome.com[Font Awesome]
 
 == Frameworks
 
