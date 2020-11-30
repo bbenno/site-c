@@ -3,6 +3,9 @@
 [[DDD]]
 == Documentation Driven Development (DDD)
 
+.References
+* https://gist.github.com/zsup/9434452[]
+
 [[RDD]]
 == README Driven Development (RDD)
 
