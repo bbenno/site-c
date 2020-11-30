@@ -6,5 +6,22 @@
 [[RDD]]
 == README Driven Development (RDD)
 
+<<RDD>> can be considered as a subset of <<DDD>>
+
+[horizontal]
+Motivation::
+Software is worthless if it solves the wrong problem or nobody can use it e.g. due to lack of documentation.
+Characteristics::
+Write READMEfootnote:[Single file of documentation intended to be an introduction] first.
+Advantages::
+* Enforces thoughts about project.
+* Writing README at the beginning of the project (when excitement and motivation are at their highest) is mostly easy compared with writing it retroactively.
+* Prevents lengthy or overprecise specification.
+* Rewards keeping libraries small and modularized.
+* Makes discussions simpler. (written downs prevents endlessly, circling talks)
+
+.References
+* https://tom.preston-werner.com/2010/08/23/readme-driven-development.html[]
+
 [[TDD]]
 == Test Driven Development (TDD)
