@@ -35,6 +35,18 @@ toc::[]
 * https://github.com/google/styleguide/blob/gh-pages/docguide/style.md[google/styleguide/docguide/style.mdicon:github[fw]]
 * https://github.com/slang800/markdown-styleguide[slang800/markdown-styleguideicon:github[fw]]
 
+== r
+
+* https://rstudio.com/products/rstudio/download/[RStudio IDE] icon:github[link=https://github.com/rstudio/rstudio]
+** https://rstudio.com/resources/cheatsheets/[Cheatsheets]
+* https://r4ds.had.co.nz/[R for Data Science], Hadley Wickham and Garrett Grolemund, O'Reilly
+
+.packages
+* `ggplot2`
+** https://ggplot2-book.org[ggplot2: elegant graphics for data analysis], http://hadley.nz[Hadley Wickham], Springer icon:github[link=https://github.com/hadley/ggplot2-book]
+** https://ggplot2.tidyverse.org/reference/index.html[Reference] @tidyverse icon:github[link="https://github.com/tidyverse/ggplot2/"]
+** https://exts.ggplot2.tidyverse.org/[Extensions]
+
 == regex
 
 * https://jex.im/regulex/[Visualizer]
