@@ -5,6 +5,24 @@
 
 [[Entity]]
 == Entity (Hibernate)
+
+=== Auto Generated Values
+
+`GenerationType.AUTO` (default)::
+  The Persistence provider chooses the generation strategy.
+  Hibernate selects a generation strategy based on the database specific dialect, mostly `GenerationType.SEQUENCE`.
+`GenerationType.IDENTITY`::
+  It relies on an auto-incremented database column and lets the database generate a new value with each insert operation.
+  Using Hibernate it has some performance drawbacks.footnote:[Hibernate requires a primary key value for each managed entity and therefore has to perform the insert statement immediately. This prevents it from using different optimization techniques like JDBC batching.]
+`GenerationType.SEQUENCE`::
+  Database sequence is used to generate unique values.
+  Although it requires additional select statements to get the next value from a database sequence this has no performance impact for most applications.
+`GenerationType.TABLE`::
+  This strategy should rarely used nowadays.
+  It simulates a sequence by storing and updating its current value in a database table which requires the use of pessimistic locks which put all transactions into a sequential order.
+  This slows down the application.
+  Therefore, the `GenerationType.SEQUENCE` should be preferred.
+
 === Inheritance
 
 Querying a base class will retrieve all the sub-class entities as well.
