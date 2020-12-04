@@ -1,0 +1,130 @@
+= Spring
+:icons: font
+:source-language: java
+:keywords: Spring, Java, JPA, Entity
+
+[[Entity]]
+== Entity (Hibernate)
+=== Inheritance
+
+Querying a base class will retrieve all the sub-class entities as well.
+If this behavior is unintended add the `@Ploymorphism` annotation to the sub-class definition with type `EXPLICIT`
+
+[source]
+----
+@Entity
+@Polymorphism(type = PolymorphismType.EXPLICIT)
+public class A implements S { ... }
+----
+
+==== MappedSuperclass
+
+[source]
+----
+@MappedSuperclass
+public class S { @Id private long id; } <1>
+
+@Entity
+public class A extends { private String s; } <2>
+----
+<1> The *MappedSuperclass* `S` will not be persisted  in the database and can not contain associations with other entities.
+<2> The `A` table has two columns for the declared and inherited fields.
+
+==== Single Table
+
+This strategy creates one table for each class hierarchy.
+It is the default strategy chosen by JPA.
+
+Since the records for all entities will be in the same table, a way to differentiate between them is needed.
+
+.Discrimination types
+. <<Discriminator Values>> `DTYPE`
+. <<Discriminator Formula>>
+
+===== Discriminator Values
+
+[source]
+----
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "class_type", discriminatorType = DiscriminatorType.INTEGER) <1>
+public class S { @Id private long id; }
+
+@Entity
+@DiscriminatorValue("1") <2>
+public class A extends S { private String s1; }
+
+@Entity
+@DiscriminatorValue("2") <2>
+public class B extends S { private String s2 }
+----
+<1> Differentiate sub-class entities by `integer`column called `class_type`.
+<2> Values of sub-class records of `class_type` column.
+
+There are two other predefined values that the annotation can take.
+
+.Predefined annotation values
+[horizontal]
+`@DiscriminatorValue("null")`:: Any row without a discriminator value will be mapped to the entity class with this annotation. This can be applied to the root class of the hierarchy.
+`@DiscriminatorValue("not null")`:: Any row with a discriminator value not matching any of the ones associated with entity definitions will be mapped to the class with this annotation.
+
+===== Discriminator Formula
+
+Instead of a column, the `@DiscriminatorFormula` annotation can be used to determine the differentiating values.
+
+[horizontal]
+Advantage:: polymorphic query performance -> only one table needs to be accessed when querying parent entities
+Disadvantage:: `NOT NULL` constraints on sub-class entity properties are no longer usable
+
+[source]
+----
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorFormula("case when s is not null then 1 else 2 end") <1>
+public class S { @Id private long id; }
+
+@Entity
+@DiscriminatorValue("1") <2>
+public class A extends S { private String s; }
+
+@Entity
+@DiscriminatorValue("2") <2>
+public class B extends S { private String t; }
+----
+<1> Formula replaces type column.
+<2> Entity annotations remain the same.
+
+==== Joined Table
+
+Each class in the hierarchy is mapped to its table.
+All tables will have an identifier column named after the parent class, which will be used for joining them when needed.
+The disadvantage of this inheritance mapping method is that retrieving entities requires joins between tables, which can result in lower performance for large numbers of records.
+
+[source]
+----
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+public class S { @Id private long id; }
+
+@Entity
+@PrimaryKeyJoinColumn(name = "aId") // The "a" in `aId` is not an article but the name of the class.
+public class A extends S { private String s; }
+----
+
+==== Table per Class
+
+The strategy maps each entity to its table which contains all the properties of the entity, including the ones inherited.
+The resulting schema is similar to the one using <<MappedSuperclass>>, but unlike it, a table per class will indeed define entities for parent classes, allowing associations and polymorphic queries as a result.
+
+The strategy is not very different from mapping each entity without inheritance.
+The distinction is apparent when querying the base class, which will return all the sub-class records as well by a `UNION` statement (performance impact!) in the background.
+
+[source]
+----
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class S { @Id private long id; }
+
+@Entity
+public class A { private String s; }
+----
