@@ -1,0 +1,6 @@
+= Django
+:badge: https://shields.io/badge
+
+image:{badge}/-Documentation-grey?logo=Django[link="https://docs.djangoproject.com/en/2.0/"]
+image:{badge}/-GitHub-grey?logo=GitHub[link="https://github.com/django/django"]
+
