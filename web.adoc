@@ -17,6 +17,7 @@
 * https://github.com/svg/svgo/[SVG Optimizer] -- `npm install svgo`
 
 === Favicon
+
 .generator
 * https://favicon.io/[]
 * https://www.favicon-generator.org/[]
@@ -26,6 +27,12 @@
 * https://getbootstrap.com[Bootstrap]
 ** https://icons.getbootstrap.com[Bootstrap Icons] icon:github[link=https://github.com/twbs/icons]
 * https://fontawesome.com[Font Awesome]
+
+== Form
+
+.UX
+* https://www.smashingmagazine.com/2011/11/extensive-guide-web-form-usability/[An Extensive Guide To Web Form Usability]
+* https://www.smashingmagazine.com/2018/08/ux-html5-mobile-form-part-1/[UX And HTML5: Let’s Help Users Fill In Your Mobile Form (Part 1)]
 
 == Frameworks
 
