@@ -2,13 +2,18 @@
 :icons: font
 
 .consideration
-* https://developer.mozilla.org/docs/Web/Accessibility[Accessibility]
+* Accessibility
 * https://validator.w3.org/nu/[HTML Validity]
 * Favicon
 * Mobile View
 * Imprint
 * Self-description
 * UTF-8 > Icon
+
+== Accessibility
+
+* https://webaim.org[WebAIM] -- [.underline]#web# [.underline]##a##ccessibility [.underline]##i##n [.underline]##m##ind
+* https://developer.mozilla.org/docs/Web/Accessibility[MDN docs]
 
 == Images
 
@@ -25,7 +30,7 @@
 == Toolkits
 
 * https://getbootstrap.com[Bootstrap]
-** https://icons.getbootstrap.com[Bootstrap Icons] icon:github[link=https://github.com/twbs/icons]
+  ** https://icons.getbootstrap.com[Bootstrap Icons] icon:github[link=https://github.com/twbs/icons]
 * https://fontawesome.com[Font Awesome]
 
 == Form
