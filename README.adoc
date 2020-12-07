@@ -1,0 +1,17 @@
+= Site C{ool,omputer,ode}
+
+This tiny part of the internet contains a few pages about (subjectively) cool stuff that is related to computer or coding, both theoretically as well as practically.
+
+== Setup
+
+. Install dependencies
++
+[source]
+bundle install
+. Build pages
++
+[source]
+bundle exec jekyll build
+. Preview pages
+[source]
+bundle exec jekyll serve
