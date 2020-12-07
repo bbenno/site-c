@@ -6,6 +6,9 @@
 === Color
 
 * http://amortizedcost.net/ui-desing-for-software-developer-part-1/[]
+* contrast
+  ** https://www.viget.com/articles/color-contrast/[]
+  ** https://graphicdesign.stackexchange.com/questions/3682[]
 
 .generator
 * https://coolors.co[]
