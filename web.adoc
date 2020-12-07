@@ -1,19 +1,25 @@
 = Web
 :icons: font
 
-.consideration
-* Accessibility
-* https://validator.w3.org/nu/[HTML Validity]
-* Favicon
-* Mobile View
-* Imprint
-* Self-description
-* UTF-8 > Icon
-
 == Accessibility
 
 * https://webaim.org[WebAIM] -- [.underline]#web# [.underline]##a##ccessibility [.underline]##i##n [.underline]##m##ind
 * https://developer.mozilla.org/docs/Web/Accessibility[MDN docs]
+
+== Elements
+
+.Files
+* HTML5
+* CSS3
+* JS
+* Favicon
+* Robots.txt
+* .htaccess
+
+.Page
+* Self-description
+* Imprint
+* UTF-8 > Icon
 
 == Evaluation
 
