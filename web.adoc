@@ -15,6 +15,14 @@
 * https://webaim.org[WebAIM] -- [.underline]#web# [.underline]##a##ccessibility [.underline]##i##n [.underline]##m##ind
 * https://developer.mozilla.org/docs/Web/Accessibility[MDN docs]
 
+== Evaluation
+
+.Metrics, scores,...
+* Lighthouse icon:github[link="https://github.com/GoogleChrome/lighthouse"]
+
+.Validation
+* https://validator.w3.org/nu/[Nu Html Checker] icon:github[link="https://github.com/validator/validator"]
+
 == Images
 
 === SVG
