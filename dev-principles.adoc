@@ -1,0 +1,11 @@
+= Software Development Principles 
+:icons: font
+
+== SOLID
+
+.5 principles of object-oriented programming
+* Single responsibility
+* Open/Closed
+* Liskov Substitution
+* Interface Segregation
+* Dependency Inversion
