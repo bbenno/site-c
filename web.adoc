@@ -5,6 +5,9 @@
 
 * https://webaim.org[WebAIM] -- [.underline]#web# [.underline]##a##ccessibility [.underline]##i##n [.underline]##m##ind
 * https://developer.mozilla.org/docs/Web/Accessibility[MDN docs]
+* https://accesslint.com[AccessLint] -- Automated and continuous web accessibility testing
+* Awesome Accessibility icon:github[link="https://github.com/brunopulis/awesome-a11y"]
+* https://github.com/collections/web-accessibility[GitHub Collection: Web accessibility]
 
 == Elements
 
