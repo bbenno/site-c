@@ -1,0 +1,3 @@
+= Java
+
+. Do not write default getter and setter manually. Use https://projectlombok.org/features/GetterSetter[lombok's annotations].
