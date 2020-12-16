@@ -1,0 +1,59 @@
+= R
+:cran-p: https://cran.r-project.org/package=
+
+== Setup Project
+
+.Structure
+[source]
+----
+project
+├── analysis/
+│   ├── Makefile
+│   └── report.Rmd
+├── R/
+│   ├── ...
+│   └── func_script.R
+├── config/ <2>
+│   └── config.R
+├── data/
+│   ├── raw/ <3>
+│   ├── processed/
+│   ├── output/
+│   └── tmp/
+├── doc/
+├── man/
+├── output/
+│   ├── figs/
+│   └── plots/
+├── src/
+├── tests/
+├── vignettes/ <5>
+├── .gitignore
+├── .Rbuildignore
+├── .Renviron <1>
+├── DESCRIPTION <4>
+├── LICENSE
+├── NAMESPACE
+├── Project.RProj
+└── README
+----
+
+<1> EnvFile containing evironment variables
+<2> Preferred: as git submodule
+<3> Usually symlink to a folder that is read-only to the R user
+<4> Metadata
+<5> Workflows using `.Rmd` documents
+
+== Packages
+
+* {cran-p}here[`here`] -- relative paths
+* {cran-p}renv[`renv`] -- dependency management
+* {cran-p}drake[`drake`] -- workflows orchestration
+* {cran-p}usethis[`usethis`] -- git
+* {cran-p}knitr[`knitr`] -- dynamic report generation
+
+== Rmarkdown
+
+== References
+
+* 
