@@ -20,6 +20,7 @@
 * https://primer.style/octicons/[Octicons] icon:github[link="https://github.com/primer/octicons"]
 * https://icons.getbootstrap.com/[Bootstrap Icons] icon:github[link="https://github.com/twbs/icons"]
 * https://simpleicons.org[Simple Icons] icon:github[link="https://github.com/simple-icons/simple-icons"]
+* https://feathericons.com[Feather] icon:github[link="https://github.com/feathericons/feather"]
 
 .Unicode
 * https://unicode-table.com[]
