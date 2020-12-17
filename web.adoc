@@ -47,7 +47,6 @@
 == Toolkits
 
 * https://getbootstrap.com[Bootstrap]
-  ** https://icons.getbootstrap.com[Bootstrap Icons] icon:github[link=https://github.com/twbs/icons]
   ** https://getbootstrap.com/docs/5.0/examples/[Bootstrap v5.0 Examples]
   ** https://startbootstrap.com/themes[Start Bootstrap] -- Free Bootstrap Templates & Themes
   ** https://www.w3schools.com/bootstrap/bootstrap_templates.asp[Bootstrap layout template]
