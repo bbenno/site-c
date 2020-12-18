@@ -151,3 +151,81 @@ public class S { @Id private long id; }
 @Entity
 public class A { private String s; }
 ----
+
+[[MVC]]
+== Model-View-Control
+
+For basic usage consider the https://spring.io/guides/gs/serving-web-content/[Serving Web Content with Spring MVC] guide on https://spring.io[spring.io].
+
+=== Controller
+
+`@Controller` is the central annotation to mark a class as MVC-controller.
+
+==== Redirect
+
+There are several ways to redirect requests.
+<<RedirectView>> and <<prefix_redirect>> will redirect via the https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302[HTTP 302] response status code.
+<<prefix_forward>> will not redirect but forward the request internally. The client will not be aware of this due to the URL in the browser remaining unchanged.
+
+Furthermore, the <<prefix_redirect>> approach should be used in preference to <<RedirectView>> for two reasons.
+First, using `RedirectView` couples the code closely to the https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/servlet/view/RedirectView.html[Spring API].
+Second, the controller operation will always redirect and lacks of flexibility.
+
+There also is another alternative without the usage of any prefix: using `RedirectView` bean in the configuration.
+This approach will not be considered.
+
+[[RedirectView]]
+===== Redirect with the _RedirectView_
+
+`RedirectView` will trigger a `HttpServletResponse.sendRedirect()` -- which will perform the actual redirect.
+
+[source]
+----
+@Controller
+public class RedirectController {
+    @RequestMapping("/redirect")
+    public RedirectView redirect(RedirectAttributes attributes) {
+        attributes.addFlashAttribute("attrFlash", "redirected");
+        attributes.addAttribute("attr", "redirected");
+        return new RedirectView("target");
+    }
+}
+----
+
+[[prefix_redirect]]
+===== Redirect with the prefix _redirect_
+
+Using the prefix _redirect_ the controller is not aware of the redirection.
+`UrlBasedViewResolver` will recognize the prefix as a special indication that a redirect needs to happen.
+The rest of the view name will be used as the redirect URL, relatively to the current Servlet context.
+
+[source]
+----
+@Controller
+public class RedirectController {
+    @RequestMapping("/redirect")
+    public ModelAndView redirect(ModelMap model) {
+        model.addAttribute("attr", "redirected");
+        // Following redirect is relative to the current Servlet context.
+        return new ModelAndView("redirect:/target", model);
+    }
+}
+----
+
+[[prefix_forward]]
+===== Forward With the prefix _forward_
+
+Like the _redirect_ prefix, the _forward_ prefix will be resolved by `UrlBasedViewResolver`.
+An InternalResourceView is being created which performs a `RequestDispatcher.forward()` to the target view.
+
+[source]
+----
+@Controller
+public class RedirectController {
+    @GetMapping("/forward")
+    public ModelAndView forward(ModelMap model) {
+        model.addAttribute("attr", "forwarded");
+        return new ModelAndView("forward:/target", model);
+    }
+}
+----
