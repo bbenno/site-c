@@ -192,6 +192,11 @@ Bean -down- Repository
 @enduml
 ....
 
+=== Model
+
+Unlike in Ruby on Rails, the model class  in spring is not implemented by the developer.
+It is a key-value storage in which data of a request and/or response is stored. 
+
 === Controller
 
 `@Controller` is the central annotation to mark a class as MVC-controller.
