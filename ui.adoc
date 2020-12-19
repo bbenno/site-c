@@ -21,6 +21,7 @@
 * https://icons.getbootstrap.com/[Bootstrap Icons] icon:github[link="https://github.com/twbs/icons"]
 * https://simpleicons.org[Simple Icons] icon:github[link="https://github.com/simple-icons/simple-icons"]
 * https://feathericons.com[Feather] icon:github[link="https://github.com/feathericons/feather"]
+* https://microsoft.github.io/vscode-codicons/dist/codicon.html[Codicons] icon:github[link="https://github.com/microsoft/vscode-codicons"] -- icon font for Visual Studio Code
 
 .Unicode
 * https://unicode-table.com[]
