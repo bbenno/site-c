@@ -7,3 +7,12 @@
 image:{badge}/-Website-grey?logo=thymeleaf[link="https://www.thymeleaf.org"]
 image:{badge}/-Documentation-grey?logo=thymeleaf[link="https://www.thymeleaf.org/documentation.html"]
 image:{badge}/-Documentation-grey?logo=GitHub[link="https://github.com/thymeleaf/thymeleaf"]
+
+== Expression
+
+[horizontal]
+`${...}`:: Variable expressions
+`*{...}`:: Selection expressions
+`#{...}`:: Message (i18n) expressions
+`@{...}`:: Link (URL) expressions
+`~{...}`:: Fragment expressions
