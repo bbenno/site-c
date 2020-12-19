@@ -23,10 +23,14 @@
 * https://feathericons.com[Feather] icon:github[link="https://github.com/feathericons/feather"]
 * https://microsoft.github.io/vscode-codicons/dist/codicon.html[Codicons] icon:github[link="https://github.com/microsoft/vscode-codicons"] -- icon font for Visual Studio Code
 
+https://github.com/tancredi/fantasticon[Fantasticon] is a generation tool to create icon-fonts.
+
 .Unicode
 * https://unicode-table.com[]
 * http://www.fileformat.info/info/unicode/[]
 * https://www.w3schools.com/charsets/[]
+
+
 
 == UX
 
