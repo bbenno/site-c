@@ -1,0 +1,9 @@
+= Thymeleaf
+:icons: font
+:source-language: java
+:keywords: Thymeleaf, Java, Entity, HTML5, XHTML
+:badge: https://shields.io/badge
+
+image:{badge}/-Website-grey?logo=thymeleaf[link="https://www.thymeleaf.org"]
+image:{badge}/-Documentation-grey?logo=thymeleaf[link="https://www.thymeleaf.org/documentation.html"]
+image:{badge}/-Documentation-grey?logo=GitHub[link="https://github.com/thymeleaf/thymeleaf"]
