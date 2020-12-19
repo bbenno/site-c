@@ -153,9 +153,44 @@ public class A { private String s; }
 ----
 
 [[MVC]]
-== Model-View-Control
+== Model-View-Controller (MVC)
 
 For basic usage consider the https://spring.io/guides/gs/serving-web-content/[Serving Web Content with Spring MVC] guide on https://spring.io[spring.io].
+
+.Schematic overview
+[plantuml]
+....
+@startuml
+skinparam monochrome true
+hide circle
+
+package "Presentation" {
+  class Model
+  class Controller <<Controller>>
+  class MyController <<Controller>> <<Scope>>
+  class HTML5 <<View>>
+
+  MyController "1" x-right-> "1" Model
+  MyController "1" x-left-> "1" HTML5
+  Controller "1" --> "*" HTML5
+  Controller "1" x--> "*" MyController
+}
+
+package "Business" {
+  class Bean <<Service>>
+}
+
+package "Persistence" {
+  class Repository<E, K>
+  class Entity <<Entity>>
+
+  Repository -left-> Entity
+}
+
+MyController -down- Bean
+Bean -down- Repository
+@enduml
+....
 
 === Controller
 
