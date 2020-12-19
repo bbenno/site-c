@@ -1,7 +1,13 @@
 == Software / Tooling
 :icons: font
+:badge: https://shields.io/badge/
 
 .Disassembler
 * Intermediate Language Disassembler (ILDASM)
 * ILSpy icon:github[link=https://github.com/icsharpcode/ILSpy]
 * dnSpy icon:github[link=https://github.com/0xd4d/dnSpy]
+
+.Image editor
+* https://www.photopea.com[Photopea] (Online)
+* https://www.gimp.org[GNU Image Manipulation Program] (_GIMP_) image:{badge}-VCS-grey?logo=GitLab[link="https://gitlab.gnome.org/GNOME/gimp"]
+* https://inkscape.org[Inkscape] image:{badge}-GitLab-grey?logo=GitLab[link="https://gitlab.com/inkscape/inkscape"]
