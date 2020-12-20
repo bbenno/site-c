@@ -1,6 +1,12 @@
 = Web
 :icons: font
 
+[IMPORTANT]
+.Important resources
+====
+* https://www.w3.org/Provider/Style/URI[Cool URIs don't change]
+====
+
 == Accessibility
 
 * https://webaim.org[WebAIM] -- [.underline]#web# [.underline]##a##ccessibility [.underline]##i##n [.underline]##m##ind
