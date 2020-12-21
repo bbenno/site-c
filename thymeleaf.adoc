@@ -8,6 +8,11 @@ image:{badge}/-Website-grey?logo=thymeleaf[link="https://www.thymeleaf.org"]
 image:{badge}/-Documentation-grey?logo=thymeleaf[link="https://www.thymeleaf.org/documentation.html"]
 image:{badge}/-Documentation-grey?logo=GitHub[link="https://github.com/thymeleaf/thymeleaf"]
 
+[quote, 'https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#introducing-thymeleaf[Thymeleaf documentation]']
+____
+Thymeleaf is a modern server-side Java template engine for both web and standalone environments, capable of processing HTML, XML, JavaScript, CSS and even plain text.
+____
+
 == Expression
 
 [horizontal]
