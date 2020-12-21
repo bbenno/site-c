@@ -205,6 +205,29 @@ Have a look to link:thymeleaf.adoc[].
 
 `@Controller` is the central annotation to mark a class as MVC-controller.
 
+[source]
+----
+@Controller
+public class EntityController {
+  @RequestMapping("/path/first")
+  public ModelAndView showFirstView() {
+    return new ModelAndView("firstView", "entity", new Entity());
+  }
+  
+  @RequestMapping("/path/second")
+  public String showSecondView(
+      @Valid @ModelAttribute("entity") Entity entity,
+      BindingResult result,
+      ModelMap model) {
+    if (result.hasErrors()) {
+      return "error";
+    }
+    model.addAttribute("entity_attribute", entity.getAttribute());
+    return "secondView";
+  }
+}
+----
+
 There is also the `@RestController` which is simply a shortage `@Controller` + `@ResponseBody`.
 
 ==== Redirect
