@@ -20,4 +20,44 @@ ____
 `*{...}`:: Selection expression
 `#{...}`:: Message (i18n) expression
 `@{...}`:: Link (URL) expression
-`~{...}`:: Fragment expression
+`~{...}`:: <<Fragmentation,Fragment expression>>
+
+== Fragmentation
+
+[horizontal]
+`th:insert`:: Insert fragment as the body of host tag
+`th:replace`:: Replace host tag with fragment
+`th:include`:: Insert contents of fragment as body of host tag
+
+.Basic usecase
+* Fragment definition
++
+[source]
+----
+<HTML_TAG ... th:fragment="FRAG_NAME">
+  ...
+</HTML_TAG>
+----
+* Fragment usage
++
+[source]
+----
+<HTML_TAG ... th:[insert|replace|include]="REL_FILE_PATH {two-colons} SELECTOR">...</HTML_TAG>`
+----
+
+.Parameterized usecase
+* Fragment definition
++
+[source]
+----
+<HTML_TAG ... th:fragment="FRAG_NAME (var1,var2)">
+  <p th:text="${var1} + ' and ' + ${var2}">...</p>
+  ...
+</HTML_TAG>
+----
+* Fragment usage
++
+[source]
+----
+<HTML_TAG ... th:[insert|replace|include]="REL_FILE_PATH {two-colons} SELECTOR (${val1},${val2})">...</HTML_TAG>`
+----
