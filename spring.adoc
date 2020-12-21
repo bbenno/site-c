@@ -228,7 +228,27 @@ public class EntityController {
 }
 ----
 
-There is also the `@RestController` which is simply a shortage `@Controller` + `@ResponseBody`.
+==== JSON
+
+* `@RequestBody`: return value is serialized to body of HTTP Response
++
+[source]
+----
+@PutMapping("/{id}")
+public @ResponseBody void update(@RequestBody Entity entity, @PathVariable long id) {
+    entityService.update(entity);
+}
+----
+* `@ResponseBody`: body of HTTP Request is deserialized to particular entity
++
+[source]
+----
+@RequestMapping("/{id}")
+public @ResponseBody Entity findById(@PathVariable long id) {
+    return entityService.findById(id);
+}
+----
+* `@RestController` = `@Controller` + `@ResponseBody`
 
 ==== Redirect
 
