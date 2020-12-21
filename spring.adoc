@@ -205,6 +205,8 @@ Have a look to link:thymeleaf.adoc[].
 
 `@Controller` is the central annotation to mark a class as MVC-controller.
 
+There is also the `@RestController` which is simply a shortage `@Controller` + `@ResponseBody`.
+
 ==== Redirect
 
 There are several ways to redirect requests.
