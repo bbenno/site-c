@@ -6,8 +6,10 @@
 repository
 ├── .editorconfig
 ├── .gitignore
+├── CONTRIBUTING
 ├── LICENSE
-└── README
+├── README
+└── SECURITY
 ----
 
 == General
@@ -31,8 +33,12 @@ https://git-scm.com/docs/gitignore[RTFM]
 * editor configuration -> use <<editorconfig>>
 * JPEG, PNG, ... -> use https://developers.google.com/speed/webp[WEBP]
 
-=== LICENCE
+=== CONTRIBUTING
+
+=== LICENSE / COPYING
 
 Enjoy https://choosealicense.com[]!
 
 === README
+
+=== SCURITY
