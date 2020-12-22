@@ -1,0 +1,38 @@
+= (Git) Repository
+
+.Structure
+[source]
+----
+repository
+├── .editorconfig
+├── .gitignore
+├── LICENSE
+└── README
+----
+
+== General
+
+* use english naming
+* note naming conventions
+
+== Files
+
+[[editorconfig]]
+=== .editorconfig
+
+Read https://editorconfig.org[editorconfig.org].
+
+=== .gitignore
+
+https://git-scm.com/docs/gitignore[RTFM]
+
+.Excluding
+* binaries -> should be generatable
+* editor configuration -> use <<editorconfig>>
+* JPEG, PNG, ... -> use https://developers.google.com/speed/webp[WEBP]
+
+=== LICENCE
+
+Enjoy https://choosealicense.com[]!
+
+=== README
