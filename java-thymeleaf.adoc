@@ -70,3 +70,5 @@ ____
 === Thymeleaf Layout Dialect
 
 image:{gh-badge}[link="{gh-url}ultraq/thymeleaf-layout-dialect"]
+
+=== Spring Security
