@@ -2,14 +2,15 @@
 :icons: font
 :source-language: java
 :keywords: Thymeleaf, Java, Entity, HTML5, XHTML
-:badge: https://shields.io/badge
-:gh-badge: https://shields.io/badge/-GitHub-grey?logo=GitHub
+:badge: https://shields.io/badge/
+:gh-badge: {badge}-GitHub-grey?logo=GitHub
+:doc-badge: {badge}-Documentation-grey
 :gh-url: https://github.com/
 :tl-url: https://www.thymeleaf.org/
 
-image:{badge}/-Website-grey?logo=thymeleaf[link="{tl-url}"]
-image:{badge}/-Documentation-grey?logo=thymeleaf[link="{tl-url}documentation.html"]
-image:{badge}/-Documentation-grey?logo=GitHub[link="{gh-url}thymeleaf/thymeleaf"]
+image:{badge}-Website-grey?logo=thymeleaf[link="{tl-url}"]
+image:{doc-badge}?logo=thymeleaf[link="{tl-url}documentation.html"]
+image:{doc-badge}?logo=GitHub[link="{gh-url}thymeleaf/thymeleaf"]
 
 [quote, '{tl-url}doc/tutorials/3.0/usingthymeleaf.html#introducing-thymeleaf[Thymeleaf documentation]']
 ____
@@ -70,5 +71,6 @@ ____
 === Thymeleaf Layout Dialect
 
 image:{gh-badge}[link="{gh-url}ultraq/thymeleaf-layout-dialect"]
+image:{doc-badge}[link="https://ultraq.github.io/thymeleaf-layout-dialect/"]
 
 === Spring Security
