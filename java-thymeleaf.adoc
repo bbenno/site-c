@@ -3,12 +3,15 @@
 :source-language: java
 :keywords: Thymeleaf, Java, Entity, HTML5, XHTML
 :badge: https://shields.io/badge
+:gh-badge: https://shields.io/badge/-GitHub-grey?logo=GitHub
+:gh-url: https://github.com/
+:tl-url: https://www.thymeleaf.org/
 
-image:{badge}/-Website-grey?logo=thymeleaf[link="https://www.thymeleaf.org"]
-image:{badge}/-Documentation-grey?logo=thymeleaf[link="https://www.thymeleaf.org/documentation.html"]
-image:{badge}/-Documentation-grey?logo=GitHub[link="https://github.com/thymeleaf/thymeleaf"]
+image:{badge}/-Website-grey?logo=thymeleaf[link="{tl-url}"]
+image:{badge}/-Documentation-grey?logo=thymeleaf[link="{tl-url}documentation.html"]
+image:{badge}/-Documentation-grey?logo=GitHub[link="{gh-url}thymeleaf/thymeleaf"]
 
-[quote, 'https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#introducing-thymeleaf[Thymeleaf documentation]']
+[quote, '{tl-url}doc/tutorials/3.0/usingthymeleaf.html#introducing-thymeleaf[Thymeleaf documentation]']
 ____
 Thymeleaf is a modern server-side Java template engine for both web and standalone environments, capable of processing HTML, XML, JavaScript, CSS and even plain text.
 ____
@@ -61,3 +64,9 @@ ____
 ----
 <HTML_TAG ... th:[insert|replace|include]="REL_FILE_PATH {two-colons} SELECTOR (${val1},${val2})">...</HTML_TAG>`
 ----
+
+== Extend
+
+=== Thymeleaf Layout Dialect
+
+image:{gh-badge}[link="{gh-url}ultraq/thymeleaf-layout-dialect"]
