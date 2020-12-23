@@ -10,7 +10,7 @@
 
 image:{badge}-Website-grey?logo=thymeleaf[link="{tl-url}"]
 image:{doc-badge}?logo=thymeleaf[link="{tl-url}documentation.html"]
-image:{doc-badge}?logo=GitHub[link="{gh-url}thymeleaf/thymeleaf"]
+image:{gh-badge}[link="{gh-url}thymeleaf/thymeleaf"]
 
 [quote, '{tl-url}doc/tutorials/3.0/usingthymeleaf.html#introducing-thymeleaf[Thymeleaf documentation]']
 ____
