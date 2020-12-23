@@ -199,7 +199,7 @@ It is a key-value storage in which data of a request and/or response is stored.
 
 === View
 
-Have a look to link:thymeleaf.adoc[].
+As Jakarta Server Pages (JSP) is not recommended, use link:java-thymeleaf.adoc[Thymeleaf].
 
 === Controller
 
