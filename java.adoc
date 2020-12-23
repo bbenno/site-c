@@ -1,3 +1,5 @@
 = Java
+:doc-url: https://docs.oracle.com/en/java/javase/15/docs/
 
-. Do not write default getter and setter manually. Use https://projectlombok.org/features/GetterSetter[lombok's annotations].
+. Use https://projectlombok.org/features/GetterSetter[Lombok annotations].
+. Use {doc-url}api/java.base/java/util/Optional.html[`Optional`] except for serialization, JSON, JPA, or expression languages.
