@@ -12,12 +12,16 @@ repository
 └── SECURITY
 ----
 
-== General
+== Process
 
-* use english naming
-* note naming conventions
+.Commit
+* https://chris.beams.io/posts/git-commit/[]
 
 == Files
+
+.General
+* use english naming
+* note naming conventions
 
 [[editorconfig]]
 === .editorconfig
