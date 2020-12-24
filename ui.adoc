@@ -44,3 +44,9 @@ https://github.com/tancredi/fantasticon[Fantasticon] is a generation tool to cre
 
 * Model-View-ViewModel (MVVM)
 * Model-View-Update (MVU)
+
+== OS
+
+=== Desktop
+
+* http://www.michieldb.nl/other/cursors/[Custom Windows cursors]
