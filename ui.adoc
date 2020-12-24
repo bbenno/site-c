@@ -9,7 +9,6 @@
 * contrast
   ** https://www.viget.com/articles/color-contrast/[]
   ** https://graphicdesign.stackexchange.com/questions/3682[]
-
 .generator
 * https://coolors.co[]
 * https://color.adobe.com[]
@@ -29,8 +28,6 @@ https://github.com/tancredi/fantasticon[Fantasticon] is a generation tool to cre
 * https://unicode-table.com[]
 * http://www.fileformat.info/info/unicode/[]
 * https://www.w3schools.com/charsets/[]
-
-
 
 == UX
 
