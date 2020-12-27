@@ -3,6 +3,8 @@
 :source-language: java
 :keywords: Spring, Java, JPA, Entity
 :badge: https://shields.io/badge
+:hibernate-version: 5.4
+:hibernate-docs-url: https://docs.jboss.org/hibernate/orm/{hibernate-version}/javadocs
 
 image:{badge}/-Website-grey?logo=Spring[link="https://spring.io/projects/spring-boot"]
 image:{badge}/-Documentation-grey?logo=Spring[link="https://docs.spring.io/spring-boot/docs/2.3.5.RELEASE/reference/htmlsingle/"]
@@ -10,6 +12,72 @@ image:{badge}/-GitHub-grey?logo=GitHub[link="https://github.com/spring-projects/
 
 [[Entity]]
 == Entity (Hibernate)
+
+=== Relations
+
+[cols="2", options="header"]
+|===
+
+|multiplicity
+|annotation
+
+|[[One-to-One, `1:1`]]`1:1`
+|{hibernate-docs-url}/org/hibernate/mapping/OneToOne.html[`@OneToOne`]
+
+|[[One-to-Many, `1:n`]]`1:n`
+|{hibernate-docs-url}/org/hibernate/mapping/OneToMany.html[`@OneToMany`]
+
+|[[Many-to-One, `n:1`]]`n:1`
+|{hibernate-docs-url}/org/hibernate/mapping/ManyToOne.html[`@ManyToOne`]
+
+|[[Many-to-Many, `n:n`]]`n:n`
+|{hibernate-docs-url}/org/hibernate/mapping/ManyToMany.html[`@ManyToMany`]
+
+|===
+
+These annotations can optionally be combined with either {hibernate-docs-url}/org/hibernate/mapping/JoinColumn.html[`@JoinColumn`] (<<One-to-One>>, <<One-to-Many>>, <<Many-to-One>>) or {hibernate-docs-url}/org/hibernate/mapping/JoinTable[`@JoinTable`] (<<Many-to-Many>>).
+
+.Optional annotation elements with default values
+[cols="5", options="header"]
+|===
+
+|annotation
+|<<One-to-One>>
+|<<One-to-Many>>
+|<<Many-to-One>>
+|<<Many-to-Many>>
+
+|`mappedBy`
+|✅
+|✅
+|✅
+|✅
+
+|`fetch`
+|✅ `EAGER`
+|✅ `LAZY`
+|✅ `EAGER`
+|✅ `LAZY`
+
+|`cascade`
+|✅ `{}`
+|✅ `{}`
+|✅ `{}`
+|✅ `{}`
+
+|`orphanRemove`
+|✅ `false`
+|✅ `false`
+|❌
+|❌
+
+|`optional`
+|✅ `true`
+|❌
+|✅ `true`
+|❌
+
+|===
 
 === Validation
 
