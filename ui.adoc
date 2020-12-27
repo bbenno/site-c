@@ -29,6 +29,10 @@ https://github.com/tancredi/fantasticon[Fantasticon] is a generation tool to cre
 * http://www.fileformat.info/info/unicode/[]
 * https://www.w3schools.com/charsets/[]
 
+=== AsciiArt
+
+* https://devops.datenkollektiv.de/banner.txt/index.html[Online Spring Boot Banner Generator (with FIGlet Fonts)]
+
 == UX
 
 * https://lawsofux.com[]
