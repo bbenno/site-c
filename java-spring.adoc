@@ -13,6 +13,9 @@ image:{badge}/-GitHub-grey?logo=GitHub[link="https://github.com/spring-projects/
 [[Entity]]
 == Entity (Hibernate)
 
+image:{badge}/-Website-grey?logo=Hibernate[link="https://hibernate.org"]
+image:{badge}/-Documentation-grey?logo=Hibernate[link="https://hibernate.org/orm/documentation/{hibernate-version}/"]
+
 === Relations
 
 [cols="2", options="header"]
