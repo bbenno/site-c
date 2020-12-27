@@ -11,6 +11,17 @@ image:{badge}/-GitHub-grey?logo=GitHub[link="https://github.com/spring-projects/
 [[Entity]]
 == Entity (Hibernate)
 
+=== Validation
+
+After adding https://search.maven.org/search?q=g:org.springframework.boot%20AND%20a:spring-boot-starter-validation[`spring-boot-starter-validation`] as dependency the following annotaions of the package `javax.validation` can be used.
+
+* `@Null`, `@NotNull`
+* `@Max`, `@Min`
+* `@Future`, `@FutureOrPresent`, `@Past`, `@PastOrPresent`
+* `@Pattern`, `@Email`, `@Size`
+* `@AssertTrue`, `@AssertFalse`
+* `@Digits`, `@DecimalMax`, `@DecimalMin`, `@Positive`, `@PositiveOrZero`, `@Negative`, `@NegativeOrZero`
+
 === Auto Generated Values
 
 `GenerationType.AUTO` (default)::
