@@ -400,3 +400,13 @@ public class RedirectController {
     }
 }
 ----
+
+== Console Application
+
+.Console Application
+. is annotated with `@SpringBootApplication`
+. `implements CommandLineRunner` (and therefore implements `void run(String... args)`)
+. called via `SpringApplication.run(<...>.class, args)`
+  .. load application context
+  .. run console application's `run`
+  .. exit `main`
