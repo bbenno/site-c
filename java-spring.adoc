@@ -446,6 +446,27 @@ public class RedirectController {
 
 image:{badge}/Documentation-SpringFramework-green[link="https://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/testing.html"]
 
+=== Validation
+
+Entity Validation should be unit tested via https://docs.oracle.com/javaee/7/api/javax/validation/Validator.html[`Validator`].
+
+.Example
+[source]
+----
+public class EntityValidationTest {
+  private final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+  
+  @Test
+  void nameShouldNotBeBlank() {
+    Entity entity = new Entity();
+    ...
+    
+    Set<ConstraintViolation<Contact>> violations = validator.validate(entity);
+    assertThat(violations).isNotEmpty();
+  }
+}
+----
+
 === Repository
 
 NOTE: There is no way to unit test Spring Data JPA repositories.
