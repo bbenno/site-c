@@ -40,6 +40,11 @@ image:{badge}/-Documentation-grey?logo=Hibernate[link="https://hibernate.org/orm
 
 These annotations can optionally be combined with either {hibernate-docs-url}/org/hibernate/mapping/JoinColumn.html[`@JoinColumn`] (<<One-to-One>>, <<One-to-Many>>, <<Many-to-One>>) or {hibernate-docs-url}/org/hibernate/mapping/JoinTable[`@JoinTable`] (<<Many-to-Many>>).
 
+.There are three options to realize <<Many-to-Many>> relation:
+. `@ManyToMany`
+. Composite Key + `@ManyToOne` in composite key class + `@OneToMany` in entities
+. Entity + `@ManyToOne` in composite key class + `@OneToMany` in entities
+
 .Optional annotation elements with default values
 [cols="5", options="header"]
 |===
