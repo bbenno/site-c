@@ -338,6 +338,19 @@ public @ResponseBody Entity findById(@PathVariable long id) {
 ----
 * `@RestController` = `@Controller` + `@ResponseBody`
 
+==== InitBinder
+
+Following `@InitBinder` annotated method of an controller will trim all String values of a request handled by this controller
+
+[source]
+----
+@InitBinder
+public void initBinder(WebDataBinder dataBinder) {
+  StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+  dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+}
+----
+
 ==== Redirect
 
 There are several ways to redirect requests.
