@@ -420,3 +420,5 @@ public class RedirectController {
 == Test
 
 image:{badge}/Documentation-SpringFramework-green[link="https://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/testing.html"]
+
+=== Web Security
