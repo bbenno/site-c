@@ -446,4 +446,33 @@ public class RedirectController {
 
 image:{badge}/Documentation-SpringFramework-green[link="https://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/testing.html"]
 
+=== Repository
+
+NOTE: There is no way to unit test Spring Data JPA repositories.
+
+. Test class is annotated with `@DataJpaTest`.
+. Inject repository via `@Autowired`.
+. Use https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/autoconfigure/orm/jpa/TestEntityManager.html[`TestEntityManager`] as a testing alternative for JPA `EntityManager`.
+
+.Example repository integration test
+[source]
+----
+@DataJpaTest
+public class EntityRepositoryTest {
+  @Autowired
+  private TestEntityManager entityManager;
+  
+  @Autowired
+  private EntityRepository entityRepository;
+  
+  @Test
+  void shouldSaveEntity() {
+    Entity entity = new Entity();
+    entityManager.persistAndFlush(entity);
+    
+    ...
+  }
+}
+----
+
 === Web Security
