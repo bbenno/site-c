@@ -5,6 +5,7 @@
 :badge: https://shields.io/badge
 :hibernate-version: 5.4
 :hibernate-docs-url: https://docs.jboss.org/hibernate/orm/{hibernate-version}/javadocs
+:spring-version: 5.0.x
 
 image:{badge}/-Website-grey?logo=Spring[link="https://spring.io/projects/spring-boot"]
 image:{badge}/-Documentation-grey?logo=Spring[link="https://docs.spring.io/spring-boot/docs/2.3.5.RELEASE/reference/htmlsingle/"]
@@ -415,3 +416,7 @@ public class RedirectController {
   .. load application context
   .. run console application's `run`
   .. exit `main`
+
+== Test
+
+image:{badge}/Documentation-SpringFramework-green[link="https://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/testing.html"]
