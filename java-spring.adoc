@@ -496,4 +496,34 @@ public class EntityRepositoryTest {
 }
 ----
 
+=== Service
+
+
+.Example
+[source]
+----
+public class EmployeeServiceImplIntegrationTest {
+  @Autowired
+  private EntityService entityService;
+
+  @MockBean
+  private EntityRepository entityRepository;
+  
+  @BeforeAll
+  void setup() {
+    Entity entity = new Entity("name");
+    
+    Mockito.when(entityRepository.findByName(entity.getName())).thenReturn(entity);
+  }
+
+  @TestConfiguration
+  static class EntityServiceImplTestContextConfiguration {
+    @Bean
+    public EntityService entityService() {
+      return new EntityServiceImpl();
+    }
+  }
+}
+----
+
 === Web Security
