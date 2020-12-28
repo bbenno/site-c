@@ -498,7 +498,6 @@ public class EntityRepositoryTest {
 
 === Service
 
-
 .Example
 [source]
 ----
@@ -525,5 +524,30 @@ public class EmployeeServiceImplIntegrationTest {
   }
 }
 ----
+
+=== Controller
+
+.Example: Unit Test
+[source]
+----
+@WebMvcTest(EmployeeRestController.class) <1>
+public class EntityControllerIntegrationTest {
+  @Autowired
+  private MockMvc mvc;
+
+  @MockBean
+  private EntityService entityService;
+  
+  @Test
+  void test() {
+    given(...).willReturn(...);
+    
+    mvc.perform(...)
+      .andExpect(status().isOk())
+      ...;
+      
+}
+----
+<1> auto-configures the Spring MVC infrastructure in order to test MVC controllers without starting a full HTTP server.
 
 === Web Security
