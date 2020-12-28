@@ -77,4 +77,11 @@ ____
 image:{gh-badge}[link="{gh-url}ultraq/thymeleaf-layout-dialect"]
 image:{doc-badge}[link="https://ultraq.github.io/thymeleaf-layout-dialect/"]
 
-=== Spring Security
+=== Security Dialect
+
+NOTE: Requires https://search.maven.org/classic/#search%7Cga%7C1%7Cthymeleaf-extras-springsecurity5[`thymeleaf-extras-springsecurity`] as dependency.
+
+`sec:authorize`::
+  control displayed content
+`sec:authentication`::
+  access to authentication object
