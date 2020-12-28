@@ -7,10 +7,14 @@
 :doc-badge: {badge}-Documentation-grey
 :gh-url: https://github.com/
 :tl-url: https://www.thymeleaf.org/
+:thymeleaf-version: 3.0
+:thymeleaf-green: 005F0F
 
-image:{badge}-Website-grey?logo=thymeleaf[link="{tl-url}"]
-image:{doc-badge}?logo=thymeleaf[link="{tl-url}documentation.html"]
-image:{gh-badge}[link="{gh-url}thymeleaf/thymeleaf"]
+image:{badge}-Website-grey?logo=Thymeleaf[link="{tl-url}"]
+image:{doc-badge}?logo=Thymeleaf[link="{tl-url}documentation.html"]
+image:{gh-badge}[link="{gh-url}thymeleaf/thymeleaf"] +
+image:{badge}Documentation-Usage-{thymeleaf-green}[link="https://www.thymeleaf.org/doc/tutorials/{thymeleaf-version}/usingthymeleaf.html"]
+image:{badge}Documentation-Spring-{thymeleaf-green}[link="https://www.thymeleaf.org/doc/tutorials/{thymeleaf-version}/thymeleafspring.html"]
 
 [quote, '{tl-url}doc/tutorials/3.0/usingthymeleaf.html#introducing-thymeleaf[Thymeleaf documentation]']
 ____
