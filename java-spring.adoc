@@ -99,6 +99,18 @@ After adding https://search.maven.org/search?q=g:org.springframework.boot%20AND%
 * `@AssertTrue`, `@AssertFalse`
 * `@Digits`, `@DecimalMax`, `@DecimalMin`, `@Positive`, `@PositiveOrZero`, `@Negative`, `@NegativeOrZero`
 
+All of the above can specify a custom error message that will be used by the controller.
+An validation message can be (String) interpolated via either `{}` for properties of the validation annotation (like `value`, `min`,...) or `${}` for external variables and expressions.
+
+.Example of validation message interpolation
+[source]
+----
+@DecimalMax(
+  value = "50",
+  message = "The ... ${formatter.format('%1$.2f', validatedValue)} must be lower than {value}%"
+)
+----
+
 === Auto Generated Values
 
 `GenerationType.AUTO` (default)::
