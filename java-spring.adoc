@@ -446,6 +446,20 @@ public class RedirectController {
 
 image:{badge}/Documentation-SpringFramework-green[link="https://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/testing.html"]
 
+.Overview of test class annotations
+`@SpringBootTest`::
+  Load complete application and injects all beans.
+  => Integration Test, Full Application
+`@WebMvcTest`::
+  Test the controller layer; mock remaining dependencies.
+  => Unit Test
+`@JsonTest`::
+  => Test JSON marshalling/unmarshalling
+`@DataJpaTest`::
+  => Integration Test, Repository Layer
+`@RestClientTests`::
+  => Test REST Clients
+
 === Validation
 
 Entity Validation should be unit tested via https://docs.oracle.com/javaee/7/api/javax/validation/Validator.html[`Validator`].
