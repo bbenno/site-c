@@ -30,6 +30,19 @@ ____
 `@{...}`:: Link (URL) expression
 `~{...}`:: <<Fragmentation,Fragment expression>>
 
+=== Link expression `@{}`
+
+image:{doc-badge}?logo=Thymeleaf[link="{tl-url}doc/tutorials/{thymeleaf-version}/usingthymeleaf.html#link-urls"]
+
+.URLs
+* absolute `https://...`
+* page-relative `...`
+* context-relative `/...`
+* server-relative `~/...`
+* protocol-relative `//...`
+
+Appending parenthesis with key-value pairs `...(entityId=${entity.id}, entityType='Entity', ...)` to a link they either will result as GET parameters `...?entityId=1&entityType=Entity` or will replace template placeholders as in `.../{entityType}(entityId=1)` -> `.../1`.
+
 == Fragmentation
 
 [horizontal]
