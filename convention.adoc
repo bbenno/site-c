@@ -1,0 +1,22 @@
+= Convention
+
+== Constructor vs Static Factory Methods
+
+[cols="b,2*e", options="header"]
+|===
+|
+|Constructor
+|Factory Method
+
+|naming
+|fixed
+|meaningful
+|===
+
+.Features of Factory Methods
+* possible to return subtypes, primitives or `null`
+* possible to control instances -> Singleton pattern
+
+.Conclusion
+* Type conversion -> Factory Method
+* Default / Special Values/Instances -> Factory Method (name them explicit)
