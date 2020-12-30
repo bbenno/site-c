@@ -451,8 +451,8 @@ image:{badge}/Documentation-SpringFramework-green[link="https://docs.spring.io/s
   Load complete application and injects all beans.
   => Integration Test, Full Application
 `@WebMvcTest`::
-  Test the controller layer; mock remaining dependencies.
-  => Unit Test
+  Load only web layer; mock remaining dependencies.
+  => Unit Test, Web Layer
 `@JsonTest`::
   => Test JSON marshalling/unmarshalling
 `@DataJpaTest`::
