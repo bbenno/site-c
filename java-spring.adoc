@@ -568,3 +568,106 @@ public class EntityControllerIntegrationTest {
 <1> auto-configures the Spring MVC infrastructure in order to test MVC controllers without starting a full HTTP server.
 
 === Web Security
+
+NOTE: Following Users identified by their usernames are not required to exist.
+
+.Default authentification values
+|===
+|username |`"user"`
+|password |`"password"`
+|role |none
+|login path |`/login`
+|logout path |`/logout`
+|===
+
+==== CSRF Token
+
+[source]
+mvc.perform(post("/path").with(csrf()))
+
+[source]
+mvc.perorm(post("/path").with(csrf().useInvalidToken()))
+
+==== As a User
+
+===== RequestPostProcessor
+
+[source]
+----
+public static RequestPostProcessor admin() {
+	return user("admin").password("password).roles("ADMIN");
+}
+
+public static RequestPostProcessor user() {
+  return user("username");
+}
+
+public static RequestPostProcessor anonymous() {
+  return anonymous();
+}
+----
+
+[source]
+mvc.perform(get("/path").with(admin())
+
+===== Annotation
+
+[source]
+----
+@Test
+@WithMockUser(user = "...", password = "..." , roles = "ADMIN")
+public void test() throws Exception {
+  mvc.perform(get("/path"))
+	...
+}
+----
+
+==== Authentication
+
+===== HTTP Basic Authentication
+
+[source]
+mvc.perform(get("/").with(httpBasic("username", "password")))
+
+===== Login Form
+
+Following POST request is filled with default values explicitly.
+If any of they matches the intended value it could be omitted.
+Notice, that the first parameter of `user()` and `password()` is the HTTP parameter name.
+
+[source]
+----
+mvc.perform(formLogin("/login").user("username", "user").password("password", "password"))
+----
+
+===== Logout
+
+If the request path is omitted the default value `"/logout"` will be used.
+
+[source]
+mvc.perform(logout("/signout"))
+
+===== Assertion
+
+.Unauthenticated Assertion
+[source]
+----
+mvc
+  .perform(formLogin().password("invalid"))
+  .andExpect(unauthenticated());
+----
+.Unauthenticated Assertion
+
+[source]
+----
+mvc
+  .perform(formLogin())
+	.andExpect(authenticated())
+----
+
+[source]
+----
+mvc
+  .perform(formLogin().user("admin").roles("USER","ADMIN"))
+	.andExpect(authenticated().withUsername("admin"));
+----
