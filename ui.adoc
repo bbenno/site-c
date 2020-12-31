@@ -21,6 +21,7 @@
 * https://simpleicons.org[Simple Icons] icon:github[link="https://github.com/simple-icons/simple-icons"]
 * https://feathericons.com[Feather] icon:github[link="https://github.com/feathericons/feather"]
 * https://microsoft.github.io/vscode-codicons/dist/codicon.html[Codicons] icon:github[link="https://github.com/microsoft/vscode-codicons"] -- icon font for Visual Studio Code
+* https://twemoji.twitter.com/[Twitter Emoji (Twemoji)] icon:github[link="https://github.com/twitter/twemoji"]
 
 https://github.com/tancredi/fantasticon[Fantasticon] is a generation tool to create icon-fonts.
 
