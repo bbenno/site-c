@@ -1,11 +1,28 @@
 = Java
 :doc-url: https://docs.oracle.com/en/java/javase/15/docs/
 :gh-url: https://github.com/
+:junit-docs-url: https://junit.org/junit5/docs/current/
 
 . Use https://projectlombok.org/features/GetterSetter[Lombok annotations].
 . Use {doc-url}api/java.base/java/util/Optional.html[`Optional`] except for serialization, JSON, JPA, or expression languages.
 
 == Testing
 
-* JUnit[5]
-* {gh-url}DiUS/java-faker[Java Faker] -- port of Ruby's {gh-url}faker-ruby/faker[faker] gem
+=== JUnit[5]
+
+.{junit-docs-url}api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html[`org.junit.jupiter.api.Assertions`]
+|===
+|`assertEquals`
+|`assertTrue`
+|`assertFalse`
+|`assertNotNull`
+|`assertNull`
+|`assertSame`
+|`assertNotSame`
+|`assertArrayEquals`
+|`assertThrows`
+|===
+
+=== {gh-url}DiUS/java-faker[Java Faker]
+
+port of Ruby's {gh-url}faker-ruby/faker[faker] gem
