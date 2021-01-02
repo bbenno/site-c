@@ -60,6 +60,13 @@
   ** https://colorlib.com/wp/cat/bootstrap/[colorlib]
 * https://fontawesome.com[Font Awesome]
 
+== Framework
+
+. https://svelte.dev/[Svelte]
+. https://vuejs.org/[Vue]
+. https://angular.io/[Angular]
+. https://reactjs.org/[React]
+
 == Form
 
 .UX
