@@ -6,10 +6,13 @@
 :hibernate-version: 5.4
 :hibernate-docs-url: https://docs.jboss.org/hibernate/orm/{hibernate-version}/javadocs
 :spring-version: 5.0.x
+:spring-boot-docs-url: https://docs.spring.io/spring-boot/docs/current/reference/html/
 
 image:{badge}/-Website-grey?logo=Spring[link="https://spring.io/projects/spring-boot"]
 image:{badge}/-Documentation-grey?logo=Spring[link="https://docs.spring.io/spring-boot/docs/2.3.5.RELEASE/reference/htmlsingle/"]
 image:{badge}/-GitHub-grey?logo=GitHub[link="https://github.com/spring-projects/spring-boot"]
+
+* {spring-boot-docs-url}appendix-application-properties.html[Common Application properties]
 
 [[Entity]]
 == Entity (Hibernate)
