@@ -43,6 +43,17 @@ image:{doc-badge}?logo=Thymeleaf[link="{tl-url}doc/tutorials/{thymeleaf-version}
 
 Appending parenthesis with key-value pairs `...(entityId=${entity.id}, entityType='Entity', ...)` to a link they either will result as GET parameters `...?entityId=1&entityType=Entity` or will replace template placeholders as in `.../{entityType}(entityId=1)` -> `.../1`.
 
+[[I18n]]
+== Internationalzation (I18n)
+
+.Format Date
+[source, lang="html"]
+----
+<p th:text="${#temporals.format(localDateTime)}"></p>
+<p th:text="${#temporals.formatISO(localDateTime)}"></p>
+----
+
+
 == Fragmentation
 
 [horizontal]
