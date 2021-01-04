@@ -46,6 +46,7 @@ project
 
 == Packages
 
+* {cran-p}config[`config`] -- configuration values across multiple environments
 * {cran-p}here[`here`] -- relative paths
 * {cran-p}renv[`renv`] -- dependency management
 * {cran-p}drake[`drake`] -- workflows orchestration
