@@ -20,3 +20,15 @@
 .Conclusion
 * Type conversion -> Factory Method
 * Default / Special Values/Instances -> Factory Method (name them explicit)
+
+== Naming
+
+* camelCase
+* COBOL-CASE
+* faltcase
+* kebab-case
+* MACRO_CASE
+* PascalCase
+* snake_case
+* Title Case
+* Train-Case
