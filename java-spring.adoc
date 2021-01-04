@@ -674,3 +674,14 @@ mvc
   .perform(formLogin().user("admin").roles("USER","ADMIN"))
 	.andExpect(authenticated().withUsername("admin"));
 ----
+
+== IMO
+
+.What I hate of Spring [Boot]
+* regarding I18n / L10n
+  ** Lack of advanced Localization (e.g. for entity member attributes)
+  ** Lack of YAML support for localized string definitions
+* It is super modular... although there are few or even only one considerable option "to choose".
+* There are no bigger / advanced Open-Source examples to have a look into when fighting with issues in one owns project
+* Documentation
+  ** There is not one documentation.
