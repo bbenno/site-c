@@ -53,6 +53,27 @@ project
 * {cran-p}usethis[`usethis`] -- git
 * {cran-p}knitr[`knitr`] -- dynamic report generation
 
+== Types
+
+Determine type by `class()` or `typeof()` functions.
+
+.Data Types
+. Numeric (`1`, `3.14`,...)
+. Integer (`1L`,...)
+. Complex (`42-3i`,...)
+. Logical (`TRUE`, `FALSE`)
+. Character (`"Mr. Burden"`,...)
+
+Converting via `as.<data_type>(<value>)`, e.g. `as.logical(32)`.
+
+.Data Structures
+. Vector (Elements of same type)
+. Matrix (multi-dimensional vector)
+. Array (Elements of same type)
+. List (Elements of different types)
+. Data Frame (Columns of different type)
+. Factor
+
 == Rmarkdown
 
 == References
