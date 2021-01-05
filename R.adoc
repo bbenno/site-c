@@ -74,6 +74,37 @@ Converting via `as.<data_type>(<value>)`, e.g. `as.logical(32)`.
 . Data Frame (Columns of different type)
 . Factor
 
+== Functions
+
+.Common
+[horizontal]
+`c(...)`:: Create a vector
+`class()`:: Class or type of an object
+`length()`:: Element count
+`head()`:: output firest data values
+`str()`:: Data structure
+`names()`:: Names
+`apply()`:: _
+
+.Statistics
+* `summary()`
+* `mean()`
+* `median()`
+* `quantile()`
+* `var()`
+* `sd()`
+
+.Matrix
+* `matrix(data, nrow = ..., ncol = ...)`
+* `diag(4)`
+* `t()`
+
+.List
+* `list(c(1, 2), "a")`
+
+.Data Frame
+* `data.frame(vec1, vec2)`
+
 == Rmarkdown
 
 == References
