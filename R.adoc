@@ -1,6 +1,8 @@
 = R
 :cran-p: https://cran.r-project.org/package=
 
+https://rstudio.com/resources/cheatsheets/[Cheatsheets]
+
 == Setup Project
 
 .Structure
