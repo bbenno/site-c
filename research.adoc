@@ -1,0 +1,7 @@
+= Research
+
+== Reproducability
+
+* https://github.com/alan-turing-institute/the-turing-way[The Turing Way] (https://the-turing-way.netlify.app/[Homepage])
+* https://annakrystalli.me/talks/r-in-repro-research-dc.html[Putting the R into Reproducible Research]
+
