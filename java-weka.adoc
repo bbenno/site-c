@@ -1,0 +1,6 @@
+= Weka
+:weka-version: 3.8.5
+:weka-docs-url: https://weka.sourceforge.io/doc.stable-3-8/
+
+Dataset {weka-docs-url}weka/core/Instances.html[`weka.core.Instances`] contains {weka-docs-url}weka/core/Instance.html[`weka.core.Instance`] objects.
+Each `Instance` consists of _nominal_, _numeric_, _string_ 
