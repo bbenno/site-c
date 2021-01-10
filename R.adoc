@@ -54,6 +54,8 @@ project
 * {cran-p}drake[`drake`] -- workflows orchestration
 * {cran-p}usethis[`usethis`] -- git
 * {cran-p}knitr[`knitr`] -- dynamic report generation
+* {cran-p}caret[`caret`] -- Machine Learning
+* {cran-p}rgl[`rgl`] -- 3D Visualization Using OpenGL
 
 == Types
 
