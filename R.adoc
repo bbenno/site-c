@@ -1,7 +1,9 @@
 = R
 :cran-p: https://cran.r-project.org/package=
 
-https://rstudio.com/resources/cheatsheets/[Cheatsheets]
+* https://rstudio.com/resources/cheatsheets/[Cheatsheets]
+* https://style.tidyverse.org/[Tidyverse Styleguide]
+* https://google.github.io/styleguide/Rguide.html[Google Styleguide]
 
 == Setup Project
 
