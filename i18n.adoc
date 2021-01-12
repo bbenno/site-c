@@ -1,0 +1,3 @@
+= Internationalization (i18n)
+
+ * https://metacpan.org/pod/distribution/Locale-Maketext/lib/Locale/Maketext/TPJ13.pod[A Localization Horror Story: It Could Happen To You] -- summary of the challenges of localising error messages
