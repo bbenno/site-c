@@ -8,6 +8,7 @@ repository
 ├── .gitignore
 ├── CONTRIBUTING
 ├── LICENSE
+├── NEWS
 ├── README
 └── SECURITY
 ----
