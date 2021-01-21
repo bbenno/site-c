@@ -18,6 +18,15 @@ repository
 .Commit
 * https://chris.beams.io/posts/git-commit/[]
 
+// -
+
+https://nvie.com/posts/a-successful-git-branching-model/[Git Flow]::
+`develop` branch contains the latest contributions and other code that will appear in the next release; +
+`master` branch contains the code of the latest release
+
+-> https://github.com/petervanderdoes/gitflow-avh
+
+
 == Files
 
 .General
