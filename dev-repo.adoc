@@ -26,6 +26,10 @@ https://nvie.com/posts/a-successful-git-branching-model/[Git Flow]::
 
 -> https://github.com/petervanderdoes/gitflow-avh
 
+== CI/CD
+
+* https://www.appveyor.com/[AppVeyor] for Windows, Linux and macOS
+* https://travis-ci.org/[Travis]
 
 == Files
 
