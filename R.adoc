@@ -116,4 +116,10 @@ Converting via `as.<data_type>(<value>)`, e.g. `as.logical(32)`.
 
 == References
 
+=== Books
+
+* https://moderndive.com/[Statistical Inference via Data Science]
+* https://r-graphics.org/[R Graphics Cookbook]
+* https://ggplot2-book.org/[ggplot2]
+
 * 
