@@ -1,5 +1,10 @@
 = Development Process
 
+[[git-mail]]
+== `git send-email`
+
+* https://blog.brixit.nl/git-email-flow-versus-github-flow/[]
+
 [[DDD]]
 == Documentation Driven Development (DDD)
 
