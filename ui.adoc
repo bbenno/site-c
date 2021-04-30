@@ -29,6 +29,9 @@ https://github.com/tancredi/fantasticon[Fantasticon] is a generation tool to cre
 * https://unicode-table.com[]
 * http://www.fileformat.info/info/unicode/[]
 * https://www.w3schools.com/charsets/[]
+* Emoji
+** https://unicode.org/emoji/charts/full-emoji-list.html[]
+** https://emojipedia.org/[]
 
 === AsciiArt
 
