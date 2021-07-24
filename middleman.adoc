@@ -1,0 +1,9 @@
+
+== Extensions
+
+https://directory.middlemanapp.com/#/extensions/all[Complete List]
+
+* [`middleman-livereload`]
+* [`middleman-minify-html`]
+* [`middleman-robots`]
+* [`middleman-sitemap`]
