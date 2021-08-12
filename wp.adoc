@@ -1,0 +1,6 @@
+= wordPress
+
+== Plugins
+
+Instagram::
+https://wordpress.org/plugins/spotlight-social-photo-feeds/[Spotlight Social Media Feeds] > https://wordpress.org/plugins/insta-gallery/[Social Feed Gallery]
