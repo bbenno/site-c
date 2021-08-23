@@ -1,0 +1,6 @@
+= Avif
+
+* https://jakearchibald.com/2020/avif-has-landed/
+* https://caniuse.com/?search=AVIF
+* https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4
+* https://aomediacodec.github.io/av1-avif/
