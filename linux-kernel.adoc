@@ -5,3 +5,4 @@
 * https://github.com/kernelci/kernelci-core
 * https://github.com/wendlers/rpi-kmod-samples
 * https://kernelnewbies.org/
+* http://www.kroah.com/lkn/
