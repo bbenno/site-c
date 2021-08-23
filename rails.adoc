@@ -1,0 +1,45 @@
+= Ruby on Rails
+
+
+== Testing
+
+.Tooling
+[horizontal]
+Minitest:: Testing Framework
+Factory Bot:: Fixture Replacement
+Faker:: Fake Data
+Shoulda Matchers:: One-Line Tests
+
+=== Why Minitest, not RSpec
+
+* Minitest is the testing framework used in the Rails Guide
+* Plain Ruby (Minitest) > Domain Specific Language (RSpec)
+
+.https://www.codementor.io/@azbshiri/why-minitest-is-way-better-than-rspec-tbn19bp3u[Blog: Why MiniTest is way better than RSpec]
+* Simplicity
+* Learning curve
+
+[quote,https://dev.to/truggeri/rspec-or-minitest-for-testing-rails-apps-42fi]
+____
+Rspec::
+Pros:::
+* Test are very easy to read and figure out what they are trying to verify
+* CLI is simple. You can easily run a specific example (even if the example is defined using metaprogramming)
+* The tools for stubbing and verifying method calls are simple and intuitive
+* Creating a matrix of different scenarios is easy through shared contexts, lets and the example hooks (before, after, around)
+Cons:::
+* Takes longer to learn the DSL since it is not pure Ruby
+* Tests take longer and have a larger memory footprint
+* Requires libraries for doing things that come out of the box with minitest (such as fixtures)
+
+Minitest::
+Pros:::
+* Runs much faster than rspec
+* Tests are written in pure Ruby
+* Outputs not only number of examples, but also number of assertions
+* Comes with fixtures and many Rails assertions out of the box
+Cons:::
+* CLI isn't the best. Hard to run a specific example
+* Stubbing or verifying method calls is not as intuitive as in rspec
+* Harder to create a matrix of scenarios since you cannot nest contexts as in rspec
+____
