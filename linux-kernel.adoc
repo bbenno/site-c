@@ -1,0 +1,5 @@
+= Linux Kernel
+
+* https://github.com/sysprog21/lkmpg
+* https://github.com/cirosantilli/linux-kernel-module-cheat
+* https://github.com/kernelci/kernelci-core
