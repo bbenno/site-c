@@ -1,2 +1,3 @@
 
 * https://ml.berkeley.edu/blog/posts/clip-art/
+* https://kaptein.me/blog/the-beauty-of-computer-dreams/
