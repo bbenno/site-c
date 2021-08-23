@@ -1,5 +1,8 @@
 = Ruby on Rails
 
+* https://github.com/thoughtbot/guides/tree/HEAD/rails[]
+* https://rails.rubystyle.guide/[]
+* https://minitest.rubystyle.guide/[]
 
 == Testing
 
