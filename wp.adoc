@@ -1,6 +1,16 @@
-= wordPress
+= WordPress
+:wp-plugin: https://wordpress.org/plugins
 
 == Plugins
 
-Instagram::
-https://wordpress.org/plugins/spotlight-social-photo-feeds/[Spotlight Social Media Feeds] > https://wordpress.org/plugins/insta-gallery/[Social Feed Gallery]
+Social Media::
+Instagram:::
+{wp-plugin}/spotlight-social-photo-feeds[Spotlight Social Media Feeds] > https://wordpress.org/plugins/insta-gallery/[Social Feed Gallery]
+
+Optimize::
+* {wp-plugin}/autoptimize[Autoptimize] https://github.com/futtta/autoptimize[:octocat:] - Optimizing JS, CSS, images (incl. lazy-load), HTML and Google Fonts, asyncing JS, removing emoji cruft and more
+* {wp-plugin}/ewww-image-optimizer[EWWW Image Optimizer] https://github.com/nosilver4u/ewww-image-optimizer[:octocat:] - Automatically compressing and resizing images and PDFs
+* {wp-plugin}/wp-super-cache[WP Super Cache ] https://github.com/Automattic/wp-super-cache[:octocat:] - caching engine for WordPress that produces static html files
+
+Cookie::
+* {wp-plugin}/complianz-gdpr[Complianz – GDPR/CCPA Cookie Consent] https://github.com/Really-Simple-Plugins/complianz-gdpr[:octocat:] - Cookie Consent plugin
