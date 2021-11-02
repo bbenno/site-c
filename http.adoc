@@ -1,3 +1,5 @@
 = HTTP
 
 * https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml[Status Codes]
+** https://http.cat/[HTTP Cats] https://github.com/httpcats/http.cat[:octocat:]
+** https://httpstatusdogs.com/[HTTP Dog]
