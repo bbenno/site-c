@@ -1,0 +1,72 @@
+= Ruby
+:icons:
+:source-language: ruby
+:keywords: ruby
+:badge: https://shields.io/badge
+:ruby-doc: https://ruby-doc.org/
+
+== Style
+
+* https://rubystyle.guide[The Ruby Style Guide]
+
+== Dependency Management
+
+* Gemfile
+* https://bundler.io[bundler]
+* https://rubygems.org[RubyGems]
+
+== Testing
+
+* RSpec
+* MiniTest
+
+== Packages
+
+.Development
+* RuboCop (static code analyzing, linting, code formatting)
+* https://github.com/ruby/debug[debug]
+
+.Testing
+* Faker
+
+.Application
+* https://github.com/rubyconfig/config[config]
+* Command Line Parser
+** https://github.com/JEG2/highline[HighLine]
+** https://github.com/davetron5000/gli[GLI]
+* https://github.com/panorama-ed/memo_wise[`MemoWise`]
+
+== Documentation
+
+* YARD
+
+== Ruby itself
+
+=== Implementations
+
+* https://www.jruby.org[JRuby] (Java)
+* https://www.graalvm.org/ruby/[TruffleRuby]
+* MRI
+* https://chrisseaton/rhizome[Rhizome] (Ruby)
+
+=== Version Managers
+
+* https://github.com/sstephenson/rbenv[`rbenv`]
+* https://rvm.io[`rvm`]
+
+== References
+
+.Documentation
+* {ruby-doc}[Ruby Documentation]
+  ** {ruby-doc}/stdlib/[Standard Library Documentation]
+  ** {ruby-doc}/core/[Core Documentation]
+* https://apidock.com/ruby/[APIdock]
+
+.Frameworks
+* https://rubyonrails.org[Ruby on Rails]
+* https://middlemanapp.com[Middleman]
+* https://www.padrinorb.com[Padrino]
+
+.Software written in Ruby
+* https://sup-heliotrope.github.io[Sup] - console-based email client
+* https://hexapdf.gettalong.org[HexaPDF] - PDF creation and manipulation
