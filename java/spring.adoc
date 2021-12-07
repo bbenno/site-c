@@ -109,8 +109,8 @@ An validation message can be (String) interpolated via either `{}` for propertie
 [source]
 ----
 @DecimalMax(
-  value = "50",
-  message = "The ... ${formatter.format('%1$.2f', validatedValue)} must be lower than {value}%"
+	value = "50",
+	message = "The ... ${formatter.format('%1$.2f', validatedValue)} must be lower than {value}%"
 )
 ----
 
@@ -153,7 +153,7 @@ public class S { @Id private long id; } <1>
 @Entity
 public class A extends { private String s; } <2>
 ----
-<1> The *MappedSuperclass* `S` will not be persisted  in the database and can not contain associations with other entities.
+<1> The *MappedSuperclass* `S` will not be persisted in the database and can not contain associations with other entities.
 <2> The `A` table has two columns for the declared and inherited fields.
 
 ==== Single Table
@@ -268,26 +268,26 @@ skinparam monochrome true
 hide circle
 
 package "Presentation" {
-  class Model
-  class Controller <<Controller>>
-  class MyController <<Controller>> <<Scope>>
-  class HTML5 <<View>>
+	class Model
+	class Controller <<Controller>>
+	class MyController <<Controller>> <<Scope>>
+	class HTML5 <<View>>
 
-  MyController "1" x-right-> "1" Model
-  MyController "1" x-left-> "1" HTML5
-  Controller "1" --> "*" HTML5
-  Controller "1" x--> "*" MyController
+	MyController "1" x-right-> "1" Model
+	MyController "1" x-left-> "1" HTML5
+	Controller "1" --> "*" HTML5
+	Controller "1" x--> "*" MyController
 }
 
 package "Business" {
-  class Bean <<Service>>
+	class Bean <<Service>>
 }
 
 package "Persistence" {
-  class Repository<E, K>
-  class Entity <<Entity>>
+	class Repository<E, K>
+	class Entity <<Entity>>
 
-  Repository -left-> Entity
+	Repository -left-> Entity
 }
 
 MyController -down- Bean
@@ -297,7 +297,7 @@ Bean -down- Repository
 
 === Model
 
-Unlike in Ruby on Rails, the model class  in spring is not implemented by the developer.
+Unlike in Ruby on Rails, the model class in spring is not implemented by the developer.
 It is a key-value storage in which data of a request and/or response is stored.
 
 === View
@@ -312,22 +312,22 @@ As Jakarta Server Pages (JSP) is not recommended, use link:java-thymeleaf.adoc[T
 ----
 @Controller
 public class EntityController {
-  @RequestMapping("/path/first")
-  public ModelAndView showFirstView() {
-    return new ModelAndView("firstView", "entity", new Entity());
-  }
-  
-  @RequestMapping("/path/second")
-  public String showSecondView(
-      @Valid @ModelAttribute("entity") Entity entity,
-      BindingResult result,
-      ModelMap model) {
-    if (result.hasErrors()) {
-      return "error";
-    }
-    model.addAttribute("entity_attribute", entity.getAttribute());
-    return "secondView";
-  }
+	@RequestMapping("/path/first")
+	public ModelAndView showFirstView() {
+		return new ModelAndView("firstView", "entity", new Entity());
+	}
+
+	@RequestMapping("/path/second")
+	public String showSecondView(
+			@Valid @ModelAttribute("entity") Entity entity,
+			BindingResult result,
+			ModelMap model) {
+		if (result.hasErrors()) {
+			return "error";
+		}
+		model.addAttribute("entity_attribute", entity.getAttribute());
+		return "secondView";
+	}
 }
 ----
 
@@ -339,7 +339,7 @@ public class EntityController {
 ----
 @PutMapping("/{id}")
 public @ResponseBody void update(@RequestBody Entity entity, @PathVariable long id) {
-    entityService.update(entity);
+	entityService.update(entity);
 }
 ----
 * `@ResponseBody`: body of HTTP Request is deserialized to particular entity
@@ -348,7 +348,7 @@ public @ResponseBody void update(@RequestBody Entity entity, @PathVariable long 
 ----
 @RequestMapping("/{id}")
 public @ResponseBody Entity findById(@PathVariable long id) {
-    return entityService.findById(id);
+	return entityService.findById(id);
 }
 ----
 * `@RestController` = `@Controller` + `@ResponseBody`
@@ -361,8 +361,8 @@ Following `@InitBinder` annotated method of an controller will trim all String v
 ----
 @InitBinder
 public void initBinder(WebDataBinder dataBinder) {
-  StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
-  dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+	StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+	dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
 }
 ----
 
@@ -388,12 +388,12 @@ This approach will not be considered.
 ----
 @Controller
 public class RedirectController {
-    @RequestMapping("/redirect")
-    public RedirectView redirect(RedirectAttributes attributes) {
-        attributes.addFlashAttribute("attrFlash", "redirected");
-        attributes.addAttribute("attr", "redirected");
-        return new RedirectView("target");
-    }
+	@RequestMapping("/redirect")
+	public RedirectView redirect(RedirectAttributes attributes) {
+		attributes.addFlashAttribute("attrFlash", "redirected");
+		attributes.addAttribute("attr", "redirected");
+		return new RedirectView("target");
+	}
 }
 ----
 
@@ -408,12 +408,12 @@ The rest of the view name will be used as the redirect URL, relatively to the cu
 ----
 @Controller
 public class RedirectController {
-    @RequestMapping("/redirect")
-    public ModelAndView redirect(ModelMap model) {
-        model.addAttribute("attr", "redirected");
-        // Following redirect is relative to the current Servlet context.
-        return new ModelAndView("redirect:/target", model);
-    }
+	@RequestMapping("/redirect")
+	public ModelAndView redirect(ModelMap model) {
+		model.addAttribute("attr", "redirected");
+		// Following redirect is relative to the current Servlet context.
+		return new ModelAndView("redirect:/target", model);
+	}
 }
 ----
 
@@ -427,11 +427,11 @@ An InternalResourceView is being created which performs a `RequestDispatcher.for
 ----
 @Controller
 public class RedirectController {
-    @GetMapping("/forward")
-    public ModelAndView forward(ModelMap model) {
-        model.addAttribute("attr", "forwarded");
-        return new ModelAndView("forward:/target", model);
-    }
+	@GetMapping("/forward")
+	public ModelAndView forward(ModelMap model) {
+		model.addAttribute("attr", "forwarded");
+		return new ModelAndView("forward:/target", model);
+	}
 }
 ----
 
@@ -471,16 +471,16 @@ Entity Validation should be unit tested via https://docs.oracle.com/javaee/7/api
 [source]
 ----
 public class EntityValidationTest {
-  private final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
-  
-  @Test
-  void nameShouldNotBeBlank() {
-    Entity entity = new Entity();
-    ...
-    
-    Set<ConstraintViolation<Contact>> violations = validator.validate(entity);
-    assertThat(violations).isNotEmpty();
-  }
+	private final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+
+	@Test
+	void nameShouldNotBeBlank() {
+		Entity entity = new Entity();
+		...
+
+		Set<ConstraintViolation<Contact>> violations = validator.validate(entity);
+		assertThat(violations).isNotEmpty();
+	}
 }
 ----
 
@@ -497,19 +497,19 @@ NOTE: There is no way to unit test Spring Data JPA repositories.
 ----
 @DataJpaTest
 public class EntityRepositoryTest {
-  @Autowired
-  private TestEntityManager entityManager;
-  
-  @Autowired
-  private EntityRepository entityRepository;
-  
-  @Test
-  void shouldSaveEntity() {
-    Entity entity = new Entity();
-    entityManager.persistAndFlush(entity);
-    
-    ...
-  }
+	@Autowired
+	private TestEntityManager entityManager;
+
+	@Autowired
+	private EntityRepository entityRepository;
+
+	@Test
+	void shouldSaveEntity() {
+		Entity entity = new Entity();
+		entityManager.persistAndFlush(entity);
+
+		...
+	}
 }
 ----
 
@@ -522,26 +522,26 @@ NOTE: Mocking the repository layer requires to load application context.
 ----
 @SpringBootTest
 public class EmployeeServiceImplIntegrationTest {
-  @Autowired
-  private EntityService entityService;
+	@Autowired
+	private EntityService entityService;
 
-  @MockBean
-  private EntityRepository entityRepository;
-  
-  @BeforeAll
-  void setup() {
-    Entity entity = new Entity("name");
-    
-    Mockito.when(entityRepository.findByName(entity.getName())).thenReturn(entity);
-  }
+	@MockBean
+	private EntityRepository entityRepository;
 
-  @TestConfiguration
-  static class EntityServiceImplTestContextConfiguration {
-    @Bean
-    public EntityService entityService() {
-      return new EntityServiceImpl();
-    }
-  }
+	@BeforeAll
+	void setup() {
+		Entity entity = new Entity("name");
+
+		Mockito.when(entityRepository.findByName(entity.getName())).thenReturn(entity);
+	}
+
+	@TestConfiguration
+	static class EntityServiceImplTestContextConfiguration {
+		@Bean
+		public EntityService entityService() {
+			return new EntityServiceImpl();
+		}
+	}
 }
 ----
 
@@ -552,20 +552,20 @@ public class EmployeeServiceImplIntegrationTest {
 ----
 @WebMvcTest(EmployeeRestController.class) <1>
 public class EntityControllerIntegrationTest {
-  @Autowired
-  private MockMvc mvc;
+	@Autowired
+	private MockMvc mvc;
 
-  @MockBean
-  private EntityService entityService;
-  
-  @Test
-  void test() {
-    given(...).willReturn(...);
-    
-    mvc.perform(...)
-      .andExpect(status().isOk())
-      ...;
-      
+	@MockBean
+	private EntityService entityService;
+
+	@Test
+	void test() {
+		given(...).willReturn(...);
+
+		mvc.perform(...)
+		   .andExpect(status().isOk())
+		...;
+
 }
 ----
 <1> auto-configures the Spring MVC infrastructure in order to test MVC controllers without starting a full HTTP server.
@@ -598,15 +598,15 @@ mvc.perorm(post("/path").with(csrf().useInvalidToken()))
 [source]
 ----
 public static RequestPostProcessor admin() {
-	return user("admin").password("password).roles("ADMIN");
+	return user("admin").password("password").roles("ADMIN");
 }
 
 public static RequestPostProcessor user() {
-  return user("username");
+	return user("username");
 }
 
 public static RequestPostProcessor anonymous() {
-  return anonymous();
+	return anonymous();
 }
 ----
 
@@ -620,7 +620,7 @@ mvc.perform(get("/path").with(admin())
 @Test
 @WithMockUser(user = "...", password = "..." , roles = "ADMIN")
 public void test() throws Exception {
-  mvc.perform(get("/path"))
+	mvc.perform(get("/path"))
 	...
 }
 ----
@@ -655,33 +655,30 @@ mvc.perform(logout("/signout"))
 .Unauthenticated Assertion
 [source]
 ----
-mvc
-  .perform(formLogin().password("invalid"))
-  .andExpect(unauthenticated());
+mvc.perform(formLogin().password("invalid"))
+   .andExpect(unauthenticated());
 ----
 .Unauthenticated Assertion
 
 [source]
 ----
-mvc
-  .perform(formLogin())
-	.andExpect(authenticated())
+mvc.perform(formLogin())
+   .andExpect(authenticated())
 ----
 
 [source]
 ----
-mvc
-  .perform(formLogin().user("admin").roles("USER","ADMIN"))
-	.andExpect(authenticated().withUsername("admin"));
+mvc.perform(formLogin().user("admin").roles("USER", "ADMIN"))
+   .andExpect(authenticated().withUsername("admin"));
 ----
 
 == IMO
 
-.What I hate of Spring [Boot]
+.What I hate about Spring [Boot]
 * regarding I18n / L10n
   ** Lack of advanced Localization (e.g. for entity member attributes)
   ** Lack of YAML support for localized string definitions
 * It is super modular... although there are few or even only one considerable option "to choose".
 * There are no bigger / advanced Open-Source examples to have a look into when fighting with issues in one owns project
 * Documentation
-  ** There is not one documentation.
+ * There is not one documentation.
