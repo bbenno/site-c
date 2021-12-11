@@ -9,6 +9,63 @@
 
 * https://rubystyle.guide[The Ruby Style Guide]
 
+== Language Elements
+
+=== Loops
+
+As a statement each loop construction returns a value that is mentioned in the comment after the `end` keyword.
+These return values can be changed when exiting the loop with explicit value, e.g. `break value`.
+
+.infinite loop using `loop` keyword
+[source]
+----
+loop do # no iterator
+  # do something...
+end # returns nil
+----
+
+[source]
+----
+while condition # no iterator, not even a block
+  # do something...
+end # returns nil
+----
+
+[source]
+----
+until condition # no iterator, not even a block
+  # do something...
+end # returns nil
+----
+
+[source]
+----
+for iterator in range do
+  # do something with variable 'iterator'...
+end # returns 'range'
+----
+
+[source]
+----
+enumerable.each do |element|
+  # do something with variable 'element'...
+end # returns 'enumerable'
+----
+
+[source]
+----
+integer.times do |iterator|
+  # do something with variable 'iterator'...
+end # returns 'integer'
+----
+
+[source]
+----
+integer.upto(other_integer) do |iterator|
+  # do something with variable 'iterator'...
+end # returns 'integer'
+----
+
 == Dependency Management
 
 * Gemfile
