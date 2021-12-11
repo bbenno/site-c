@@ -129,6 +129,7 @@ project
 * https://www.graalvm.org/ruby/[TruffleRuby]
 * MRI
 * https://chrisseaton/rhizome[Rhizome] (Ruby)
+* YJITfootnote:[merged upstream, part of Ruby 3.1 release]- Yet Another Ruby JIT
 
 === Version Managers
 
