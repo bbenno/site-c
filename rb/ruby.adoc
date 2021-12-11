@@ -119,6 +119,7 @@ project
 == Documentation
 
 * YARD
+* RDoc
 
 == Ruby itself
 
