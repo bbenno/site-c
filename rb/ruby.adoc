@@ -66,6 +66,24 @@ integer.upto(other_integer) do |iterator|
 end # returns 'integer'
 ----
 
+== Project Structure
+
+[source,plain]
+----
+project
+├── bin/
+├── fixtures/
+├── lib/
+├── spec/
+├── .rspec
+├── .rubocop.yml
+├── [.ruby-version]
+├── Gemfile
+├── Gemfile.lock
+└── Rakefile
+└── [<...>.gemspec]
+----
+
 == Dependency Management
 
 * Gemfile
