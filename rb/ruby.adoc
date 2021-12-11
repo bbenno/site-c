@@ -100,9 +100,14 @@ project
 .Development
 * RuboCop (static code analyzing, linting, code formatting)
 * https://github.com/ruby/debug[debug]
+* yard
+* rake
 
 .Testing
 * Faker
+* byebug
+* capybara
+* rspec
 
 .Application
 * https://github.com/rubyconfig/config[config]
